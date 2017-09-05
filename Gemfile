@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-RAILS_VERSION = '~> 4.2.5.1'
+RAILS_VERSION = '4.2.9'
 
 send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 
@@ -17,7 +17,7 @@ gem 'actionpack', RAILS_VERSION
 gem 'railties', RAILS_VERSION
 
 gem 'actionmailer_inline_css'
-gem 'decent_exposure'
+gem 'decent_exposure', '2.3.3'
 gem 'devise', '~> 3.5.5'
 gem 'dotenv-rails'
 gem 'draper'
@@ -26,7 +26,7 @@ gem 'errbit_github_plugin'
 gem 'font-awesome-rails'
 gem 'haml'
 gem 'htmlentities'
-gem 'kaminari', '>= 0.16.3'
+gem 'kaminari', '0.17.0'
 gem 'mongoid', '5.0.2'
 gem 'mongoid_rails_migrations'
 gem 'rack-ssl', require: 'rack/ssl' # force SSL
@@ -79,7 +79,7 @@ group :development do
   gem 'capistrano3-puma',   require: false
 
   # better errors
-  gem 'better_errors'
+  gem 'better_errors', '2.2.0'
   gem 'binding_of_caller', platform: 'ruby'
   gem 'meta_request'
 end
